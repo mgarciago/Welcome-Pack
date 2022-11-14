@@ -11,94 +11,135 @@
 $primary-font: "Sci Fi Bronze", "sans-serif";
 $secondary-font: "Researcher-thin", "sans-serif";
 
-@media only screen and (max-width: 767px){
-    .headerVideo_video-desktop{
+@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
+    .headerVideo_video-desktop {
         display: none;
     }
 }
 
-@media only screen and (min-width: 1200px){
-    .headerVideo_video-mobile{
+@media only screen and (min-width: 768px) and (max-width: 2560px) {
+    .headerVideo_video-desktop {
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        left: 50%;
+    }
+
+    .headerVideo_video-mobile {
         display: none;
     }
+
+    .nav-container {
+       top: 0;
+    }
 }
-
-
 
 html {
     background-color: black;
     color: white;
 
-    .nav-container {
-        width: 100%;
-        font-family: $primary-font;
-        padding: 8px 0 6px;
-        background-size: 100% 6px;
-        bottom: 0;
-        position: fixed;
-        display: flex;
-        justify-content: space-around;
-
-        .nav_menu-icon,
-        .nav_email-icon {
-            width: 40px;
-        }
-
-        .nav_menu-title,
-        .nav_email-title {
-            font-size: 12px;
-        }
-
-        .nav_logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 170px;
-        }
-    }
-
-    .headerVideo-container {
-        padding-top: 0 !important;
-        height: 88vh;
+    body {
         position: relative;
-        display: block;
-        width: 100%;
+        letter-spacing: 4px;
 
-        .headerVideo_video-mobile {
+        .nav-container {
             width: 100%;
-            height: auto;
-            min-height: 100%;
-            position: absolute;
-            top: 0;
-            z-index: 1;
-            object-fit: cover;
+            font-family: $primary-font;
+            padding: 8px 0 6px;
+            background-size: 100% 6px;
+            bottom: 0;
+            position: fixed;
+            display: flex;
+            justify-content: space-around;
+
+            .nav_menu-container, .nav_email-container{
+                text-align: center;
+            }
+
+            .nav_menu-icon,
+            .nav_email-icon {
+                width: 40px;
+            }
+
+            .nav_menu-title,
+            .nav_email-title {
+                font-size: 12px;
+            }
+
+            .nav_logo {
+                display: block;
+                margin: 0 auto;
+                max-width: 170px;
+            }
         }
 
-        .headerVideo_video-desktop {
+        .headerVideo-container {
+            padding-top: 0 !important;
+            height: 88vh;
+            position: relative;
             display: block;
             width: 100%;
-            height: auto;
-            min-height: 100%;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            -webkit-transform: translateX(-50%);
-            z-index: 1;
-            object-fit: cover;
-        }
 
-        .headerVideo_details {
+            .headerVideo_video-mobile,
+            .headerVideo_video-desktop {
+                width: 100%;
+                height: auto;
+                min-height: 100%;
+                top: 0;
+                z-index: 1;
+                object-fit: cover;
+            }
+
+            .headerVideo_overlay-opacity {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 744px;
+                z-index: 2;
+            }
+        }
+        .video-details {
             width: 100%;
             bottom: 0;
+            left: 0;
             position: absolute;
             padding-bottom: 65px;
+            background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 114%);
+            box-sizing: border-box;
+            z-index: 20;
+            
+            .video-details_inner {
+                position: relative;
+                bottom: 2.2vw;
+                text-align: center;
+            }
 
-            .headerVideo_title {
+            .video-details_title {
                 display: inline-block;
                 font-size: 21px;
                 line-height: 28px;
+                font-weight: 100;
                 font-family: $secondary-font;
             }
+
+            .video-details_watch-listen{
+                margin-top: 10px;
+
+                a {
+                    font-size: 12px;
+                    line-height: 28px;
+                    font-family: $primary-font;
+                    font-weight: 100;
+                    border-bottom: 2px solid white;
+                    padding: 0 0px 7px 0;
+                    margin-right: 20px;
+                    letter-spacing: 0.3vw;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
         }
     }
 }
