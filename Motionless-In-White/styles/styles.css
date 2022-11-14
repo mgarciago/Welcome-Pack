@@ -1,5 +1,88 @@
-.menu-container {
+@font-face {
+  font-family: "Sci Fi Bronze";
+  src: url("../assets/fonts/Sci Fi Bronze.ttf");
+}
+@font-face {
+  font-family: "Researcher-thin";
+  src: url("../assets/fonts/researcher-researcher-regular-400.ttf");
+}
+@media only screen and (max-width: 915px) {
+  .headerVideo_video-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .headerVideo_video-mobile {
+    display: none;
+  }
+}
+html {
+  background-color: black;
+  color: white;
+}
+html .nav-container {
+  width: 100%;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  padding: 8px 0 6px;
+  background-size: 100% 6px;
+  bottom: 0;
+  position: fixed;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+}
+html .nav-container .nav_menu-icon,
+html .nav-container .nav_email-icon {
+  width: 40px;
+}
+html .nav-container .nav_menu-title,
+html .nav-container .nav_email-title {
+  font-size: 12px;
+}
+html .nav-container .nav_logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 170px;
+}
+html .headerVideo-container {
+  padding-top: 0 !important;
+  height: 88vh;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+html .headerVideo-container .headerVideo_video-mobile {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html .headerVideo-container .headerVideo_video-desktop {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html .headerVideo-container .headerVideo_details {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 65px;
+}
+html .headerVideo-container .headerVideo_details .headerVideo_title {
+  display: inline-block;
+  font-size: 21px;
+  line-height: 28px;
+  font-family: "Researcher-thin", "sans-serif";
 }/*# sourceMappingURL=styles.css.map */
