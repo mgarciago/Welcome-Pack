@@ -1,0 +1,985 @@
+@font-face {
+  font-family: "Sci Fi Bronze";
+  src: url("../assets/fonts/Sci Fi Bronze.ttf");
+}
+@font-face {
+  font-family: "Researcher-thin";
+  src: url("../assets/fonts/researcher-researcher-regular-400.ttf");
+}
+@media only screen and (min-width: 320px) and (max-width: 375px) and (orientation: portrait) {
+  .headerVideo-container {
+    height: 85vh;
+  }
+  .headerVideo-container .headerVideo_video-desktop {
+    display: none;
+  }
+  .video-details {
+    top: 58%;
+  }
+  .nav-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 8px 0 6px;
+    background-size: 100% 6px;
+    bottom: 0;
+    background-color: black;
+    z-index: 2;
+  }
+  .nav-container .nav_logo-container {
+    margin: 0px -15px 0px -15px;
+  }
+  .nav-container .nav_menu-title,
+.nav-container .nav_email-title {
+    font-size: 12px;
+  }
+  .nav-container .nav_menu-icon,
+.nav-container .nav_email-icon {
+    width: 40px;
+  }
+  .merch-container {
+    margin: 8vw auto 85px;
+  }
+  .merch-container .merch-container_image img {
+    width: 85%;
+  }
+  .video-cover {
+    width: 100%;
+    height: 155px;
+  }
+  .video_play-button {
+    bottom: 19vh;
+  }
+  .video_name {
+    font-size: 15px;
+  }
+  .video-share {
+    font-size: 10px;
+  }
+  .mailingList_content-container {
+    bottom: -280px;
+  }
+  .tour_buttons {
+    width: 250px;
+  }
+  .follow-members_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 50px;
+  }
+  .follow-members_container .follow-members_details {
+    margin: -60px 0px 0px 15px;
+  }
+  .follow-social_container {
+    margin: -140px 0px 0px 20px;
+  }
+  .follow-social_container .follow-social_icon-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .headerVideo-container {
+    height: 95vh;
+  }
+  .headerVideo-container .headerVideo_video-desktop {
+    display: none;
+  }
+  .video-details {
+    top: 72%;
+  }
+  .nav-container {
+    z-index: 2;
+  }
+  .mailingList_content-container {
+    bottom: -234px;
+  }
+  .mailingList_content-container .mailingList_fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  .mailingList_content-container .mailingList_fieldset .mailingList_terms {
+    margin-top: 5px;
+  }
+  .video-cover {
+    width: 100%;
+    height: 155px;
+  }
+  .video_play-button {
+    bottom: 19vh;
+  }
+  .video_name {
+    font-size: 15px;
+  }
+  .video-share {
+    font-size: 10px;
+  }
+  .tour_buttons {
+    width: 280px;
+  }
+  .follow-members_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 50px;
+  }
+  .follow-members_container .follow-members_details {
+    margin: -60px 0px 0px 25px;
+  }
+  .follow-social_container {
+    margin: -160px 0px 0px 30px;
+  }
+  .follow-social_container .follow-social_icon-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .headerVideo-container {
+    height: 95vh;
+  }
+  .headerVideo-container .headerVideo_video-desktop {
+    display: none;
+  }
+  .video-details {
+    top: 84%;
+  }
+  .nav-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 8px 0 6px;
+    background-size: 100% 6px;
+    bottom: 0;
+    background-color: black;
+    z-index: 2;
+  }
+  .nav-container .nav_logo-container {
+    margin: 0px -15px 0px -15px;
+  }
+  .nav-container .nav_menu-title,
+.nav-container .nav_email-title {
+    font-size: 12px;
+  }
+  .nav-container .nav_menu-icon,
+.nav-container .nav_email-icon {
+    width: 40px;
+  }
+  .merch-container {
+    margin: 30vw auto 85px;
+  }
+  .merch-container .merch-container_image img {
+    width: 85%;
+  }
+  .video_cover {
+    width: 100%;
+    height: 180px;
+  }
+  .video_play-button {
+    bottom: 21vh;
+  }
+  .video_name {
+    font-size: 15px;
+  }
+  .video-share {
+    font-size: 10px;
+  }
+  .mailingList_content-container {
+    bottom: -229px;
+  }
+  .tour_buttons {
+    width: 300px;
+  }
+  .follow-members_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 50px;
+  }
+  .follow-members_container .follow-members_details {
+    margin: -60px 0px 0px 30px;
+  }
+  .follow-social_container {
+    margin: -170px 0px 0px 35px;
+  }
+  .follow-social_container .follow-social_icon-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .headerVideo-container {
+    position: relative;
+    z-index: 0;
+  }
+  .headerVideo-container .headerVideo_video-mobile {
+    display: none;
+  }
+  .video-details {
+    top: 55%;
+  }
+  .nav-container {
+    background-color: transparent;
+    top: 1vh;
+    box-sizing: border-box;
+    position: absolute;
+    width: 15%;
+    border: 2px solid white;
+    display: inline-block;
+    z-index: 1;
+    padding: 12px 17px 12px 20px;
+    height: 150px;
+  }
+  .nav-container .nav_logo-container,
+.nav-container .nav_logo {
+    display: none;
+  }
+  .nav-container .nav_menu-title,
+.nav-container .nav_email-title {
+    font-size: 10px;
+  }
+  .nav-container .nav_menu-icon,
+.nav-container .nav_email-icon {
+    width: 30px;
+  }
+  .merch-container {
+    margin: 10vw auto 85px;
+  }
+  .merch-container .merch-container_image img {
+    width: 85%;
+  }
+  .video_cover {
+    width: 70%;
+    height: 258px;
+  }
+  .video_play-button {
+    bottom: 28vh;
+  }
+  .video_name {
+    font-size: 20px;
+  }
+  .video-share {
+    font-size: 15px;
+  }
+  .mailingList_content-container {
+    bottom: -180px;
+  }
+  .mailingList_content-container .mailingList_fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  .mailingList_content-container .mailingList_fieldset .mailingList_terms {
+    margin-top: 5px;
+  }
+  .tour_buttons {
+    width: 400px;
+  }
+  .follow-members_container {
+    display: flex;
+  }
+  .follow-members_container .follow-members_details {
+    margin: -70px 0px 0px 35px;
+  }
+  .follow-members_container .follow-social_image {
+    display: none;
+  }
+  .follow-members_container .follow-social_title {
+    color: black;
+  }
+  .follow-social_icon-container {
+    margin: 235px 135px 10px -600px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .footer .footer-description {
+    border-top: 1px solid #333;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .headerVideo-container {
+    position: relative;
+    z-index: 0;
+  }
+  .headerVideo-container .headerVideo_video-mobile {
+    display: none;
+  }
+  .video-details {
+    top: 80%;
+  }
+  .nav-container {
+    background-color: transparent;
+    top: 1vh;
+    box-sizing: border-box;
+    position: absolute;
+    width: 15%;
+    border: 2px solid white;
+    display: inline-block;
+    z-index: 1;
+    padding: 12px 17px 12px 20px;
+    height: 150px;
+  }
+  .nav-container .nav_logo-container,
+.nav-container .nav_logo {
+    display: none;
+  }
+  .nav-container .nav_menu-title,
+.nav-container .nav_email-title {
+    font-size: 10px;
+  }
+  .nav-container .nav_menu-icon,
+.nav-container .nav_email-icon {
+    width: 30px;
+  }
+  .merch-container {
+    margin: 10vw auto 85px;
+  }
+  .merch-container .merch-container_image img {
+    width: 85%;
+  }
+  .video_cover {
+    width: 60%;
+    height: 315px;
+  }
+  .video_play-button {
+    bottom: 32vh;
+  }
+  .video_name {
+    font-size: 20px;
+  }
+  .video-share {
+    font-size: 15px;
+  }
+  .mailingList_content-container {
+    bottom: -180px;
+  }
+  .mailingList_content-container .mailingList_fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  .mailingList_content-container .mailingList_fieldset .mailingList_terms {
+    margin-top: 5px;
+  }
+  .tour_buttons {
+    width: 400px;
+  }
+  .follow-members_container {
+    display: flex;
+  }
+  .follow-members_container .follow-members_details {
+    margin: -70px 0px 0px 60px;
+  }
+  .follow-members_container .follow-social_image {
+    display: none;
+  }
+  .follow-members_container .follow-social_title {
+    color: black;
+  }
+  .follow-social_icon-container {
+    margin: 290px 230px 10px -700px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .footer .footer-description {
+    border-top: 1px solid #333;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .headerVideo-container {
+    position: relative;
+    z-index: 0;
+  }
+  .headerVideo-container .headerVideo_video-mobile {
+    display: none;
+  }
+  .video-details {
+    top: 121%;
+  }
+  .nav-container {
+    background-color: transparent;
+    top: 1vh;
+    box-sizing: border-box;
+    position: absolute;
+    width: 15%;
+    border: 2px solid white;
+    display: inline-block;
+    z-index: 1;
+    padding: 12px 17px 12px 20px;
+    height: 150px;
+  }
+  .nav-container .nav_logo-container,
+.nav-container .nav_logo {
+    display: none;
+  }
+  .nav-container .nav_menu-title,
+.nav-container .nav_email-title {
+    font-size: 10px;
+  }
+  .nav-container .nav_menu-icon,
+.nav-container .nav_email-icon {
+    width: 30px;
+  }
+  .merch-container {
+    margin: 10vw auto 85px;
+  }
+  .merch-container .merch-container_image img {
+    width: 40%;
+  }
+  .video_cover {
+    width: 40%;
+    height: 315px;
+  }
+  .video_play-button {
+    bottom: 30vh;
+  }
+  .video_name {
+    font-size: 20px;
+  }
+  .video-share {
+    font-size: 15px;
+  }
+  .mailingList_content-container {
+    bottom: -180px;
+  }
+  .mailingList_content-container .mailingList_fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  .mailingList_content-container .mailingList_fieldset .mailingList_terms {
+    margin-top: 5px;
+  }
+  .tour_buttons {
+    width: 400px;
+  }
+  .follow-members_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .follow-members_container .follow-members_details {
+    margin: -70px 0px 0px 60px;
+  }
+  .follow-members_container .follow-social_image {
+    display: none;
+  }
+  .follow-members_container .follow-social_title {
+    color: black;
+  }
+  .follow-social_icon-container {
+    margin: 154px 230px 10px -800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .footer .footer-description {
+    border-top: 1px solid #333;
+  }
+}
+html {
+  background-color: black;
+  color: white;
+}
+html body {
+  letter-spacing: 4px;
+}
+html body .nav-container {
+  font-family: "Sci Fi Bronze", "sans-serif";
+}
+html body .nav-container .nav_menu-container,
+html body .nav-container .nav_email-container {
+  text-align: center;
+}
+html body .nav-container .nav_logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 170px;
+}
+html body .headerVideo-container {
+  padding-top: 0 !important;
+  position: relative;
+  width: 100%;
+}
+html body .headerVideo-container .headerVideo_video-mobile,
+html body .headerVideo-container .headerVideo_video-desktop {
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .headerVideo-container .headerVideo_overlay-opacity {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 744px;
+  z-index: 2;
+}
+html body .video-details {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  padding-bottom: 65px;
+  background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 114%);
+  box-sizing: border-box;
+  z-index: 0;
+}
+html body .video-details .video-details_inner {
+  position: relative;
+  bottom: 2.2vw;
+  text-align: center;
+}
+html body .video-details .video-details_title {
+  display: inline-block;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 100;
+  font-family: "Researcher-thin", "sans-serif";
+}
+html body .video-details .video-details_watch-listen {
+  margin-top: 10px;
+}
+html body .video-details .video-details_watch-listen a {
+  font-size: 12px;
+  line-height: 28px;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-weight: 100;
+  border-bottom: 2px solid white;
+  padding: 0 0px 7px 0;
+  margin-right: 20px;
+  letter-spacing: 0.3vw;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+html body .merch-container {
+  position: initial;
+  width: 100%;
+  background-size: 100% 100%;
+  text-align: center;
+}
+html body .merch-container .merch-container_title {
+  font-family: "Researcher-thin", "sans-serif";
+  font-size: 35px;
+  line-height: 35px;
+  padding: 10px 0;
+  padding-bottom: 20px;
+  font-weight: 900;
+}
+html body .merch-container .merch-container_image {
+  margin-bottom: 15px;
+}
+html body .merch-container .merch-container_button {
+  margin: 0 auto;
+  text-align: center;
+  width: 240px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  cursor: pointer;
+  height: 50px;
+  background: black;
+  border: 2px solid white;
+}
+html body .merch-container .merch-container_button a {
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  font-weight: 100;
+  color: white;
+}
+html body .video-container {
+  text-align: center;
+}
+html body .video-container .video_title {
+  font-family: "Researcher-thin", "sans-serif";
+  font-size: 35px;
+  line-height: 35px;
+  padding: 10px 0;
+  padding-bottom: 20px;
+}
+html body .video-container .video_list {
+  list-style: none;
+  margin-left: -40px;
+}
+html body .video-container .video_list .video_item .video_cover {
+  margin-top: 10px;
+  border: 1px solid white;
+}
+html body .video-container .video_list .video_item .video_play-button {
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+html body .video-container .video_list .video_item .video_play-button .play-button_image {
+  width: 100px;
+}
+html body .video-container .video_list .video_item .video_name {
+  margin-top: -60px;
+  font-family: "Sci Fi Bronze", "sans-serif";
+}
+html body .video-container .video_list .video_item .video_share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+html body .video-container .video_list .video_item .video_share .video_share-title {
+  font-family: "Sci Fi Bronze", "sans-serif";
+  margin-right: 5px;
+}
+html body .video-container .video_list .video_item .video_share .video_share-facebook,
+html body .video-container .video_list .video_item .video_share .video_share-twitter {
+  width: 20px;
+  margin-right: 10px;
+}
+html body .video-container .video_button {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  width: 240px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  cursor: pointer;
+  background: black;
+  border: 2px solid white;
+}
+html body .video-container .video_button a {
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  font-weight: 100;
+  color: white;
+}
+html body .mailingList-container {
+  text-align: center;
+  position: relative;
+}
+html body .mailingList-container .mailingList_image {
+  width: 100%;
+  margin-top: 100px;
+}
+html body .mailingList-container .mailingList_content-container {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  z-index: 0;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_title {
+  font-size: 28px;
+  font-family: "Researcher-thin", "sans-serif";
+  padding: 15px 0;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_description {
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-size: 8px;
+  line-height: 16px;
+  margin-top: 8px;
+  margin-bottom: 19px;
+  letter-spacing: 2px;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_fieldset {
+  border: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_fieldset .mailingList_input {
+  font-size: 16px;
+  line-height: 40px;
+  height: 50px !important;
+  padding-right: 0;
+  max-width: none;
+  font-weight: 100;
+  border: none;
+  border-bottom: 5px solid #3b3b3b;
+  background-color: transparent;
+  width: 100%;
+  letter-spacing: 6px;
+  text-align: center;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  border-image-slice: 1;
+  border-width: 0px 0px 2px 0px;
+  color: #3b3b3b;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_fieldset .mailingList_terms {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-weight: 100;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_fieldset .mailingList_button {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 240px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  cursor: pointer;
+  background: black;
+  border: 2px solid white;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  font-weight: 100;
+  color: white;
+}
+html body .tour-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 300px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+html body .tour-container .tour_title {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 40px;
+  font-family: "Researcher-thin", "sans-serif";
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+html body .tour-container .tour_dates_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .tour-container .tour_dates_container .tour_dates-link {
+  width: 100%;
+  display: block !important;
+  font-size: 0;
+  text-align: center;
+  text-decoration: none;
+}
+html body .tour-container .tour_dates_container .tour_dates-link .tour_date {
+  display: block !important;
+  font-size: 20px;
+  letter-spacing: 5.4px;
+  width: 100% !important;
+  margin-right: 0;
+  position: unset;
+  left: unset;
+  top: unset;
+  text-align: center;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-weight: normal;
+  color: white;
+  text-transform: uppercase;
+}
+html body .tour-container .tour_dates_container .tour_dates-link .tour_venue {
+  width: 100% !important;
+  font-size: 15px;
+  letter-spacing: 4px;
+  margin: 20px 0 9px;
+  display: block;
+  text-align: center;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  color: #fff;
+  line-height: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+html body .tour-container .tour_dates_container .tour_dates-link .tour_location {
+  text-align: center;
+  width: 100% !important;
+  margin: 10px 0px 40px 0px;
+  font-size: 10px;
+  display: block;
+  box-sizing: border-box;
+  line-height: 22px;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  letter-spacing: 3.6px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+}
+html body .tour-container .tour_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid white;
+  margin-bottom: 50px;
+}
+html body .tour-container .tour_buttons .button-RSVP,
+html body .tour-container .tour_buttons .button-tickets {
+  margin-right: 0%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 240px;
+  border: 1px solid #fff;
+  height: 50px;
+  background: #000;
+  border-image-slice: 1;
+  border-width: 1px 1px 1px 1px;
+  color: #fff;
+}
+html body .tour-container .tour_buttons .button-RSVP .button-RSVP_link,
+html body .tour-container .tour_buttons .button-RSVP .button-tickets_link,
+html body .tour-container .tour_buttons .button-tickets .button-RSVP_link,
+html body .tour-container .tour_buttons .button-tickets .button-tickets_link {
+  width: 246px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-weight: 100;
+  text-align: center;
+  line-height: 44px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+html body .tour-container .tour_buttons .button-tickets {
+  margin-bottom: 100px;
+}
+html body .tour-container .tour_moreDates-button {
+  width: 240px;
+  border: 1px solid #fff;
+  height: 50px;
+  background: #000;
+  border-image-slice: 1;
+  border-width: 1px 1px 1px 1px;
+  color: #fff;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-weight: 100;
+  text-align: center;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+html body .follow-members {
+  text-align: center;
+  margin: 0 auto 30px;
+  max-width: 92%;
+  border-bottom: 1px solid #333;
+}
+html body .follow-members .follow-members_title {
+  font-size: 28px;
+  font-family: "Researcher-thin", "sans-serif";
+  padding: 15px 0;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+html body .follow-members .follow-members_container {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  letter-spacing: 0;
+}
+html body .follow-members .follow-members_container .follow-members_member .follow-members_image {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+html body .follow-members .follow-members_container .follow-members_member .follow-members_details {
+  position: absolute;
+  z-index: 1;
+}
+html body .follow-members .follow-members_container .follow-members_member .follow-members_details .follow-members_details-name {
+  font-size: 10px;
+  letter-spacing: 2.4px;
+  line-height: 21px;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  display: block;
+  text-indent: 6px;
+  margin-bottom: 3px;
+}
+html body .follow-members .follow-members_container .follow-members_member .follow-members_details .follow-members_details-icons {
+  display: flex;
+  z-index: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+html body .follow-members .follow-members_container .follow-members_member .follow-members_details .follow-members_details-icons .icons-twitter,
+html body .follow-members .follow-members_container .follow-members_member .follow-members_details .follow-members_details-icons .icons-instagram {
+  width: 16px;
+  cursor: pointer;
+}
+html body .follow-members .follow-members_container .follow-social .follow-social_image {
+  width: 100%;
+  position: relative;
+}
+html body .follow-members .follow-members_container .follow-social .follow-social_container {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+html body .follow-members .follow-members_container .follow-social .follow-social_container .follow-social_title {
+  font-size: 10px;
+  letter-spacing: 2.4px;
+  line-height: 21px;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  display: block;
+  text-indent: 6px;
+  margin-bottom: 3px;
+}
+html body .follow-members .follow-members_container .follow-social .follow-social_container .follow-social_icon-container .follow-social_icon {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+html body .footer {
+  margin-bottom: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+html body .footer .footer-description {
+  padding: 20px 0 105px;
+  width: 92%;
+  margin: 0 auto;
+}
+html body .footer .footer-description .footer-description_copyright,
+html body .footer .footer-description .footer-description_link {
+  font-size: 7px;
+  letter-spacing: 2px;
+  padding-bottom: 0px;
+  line-height: 18px;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
