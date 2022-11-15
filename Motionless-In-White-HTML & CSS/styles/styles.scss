@@ -40,7 +40,6 @@ $secondary-font: "Researcher-thin", "sans-serif";
     .video-details {
         top: 61%;
     }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 2560px) {
@@ -95,7 +94,8 @@ html {
 
         .nav-container {
             font-family: $primary-font;
-
+            z-index: 1;
+            
             .nav_menu-container,
             .nav_email-container {
                 text-align: center;
@@ -231,29 +231,162 @@ html {
                 padding-bottom: 20px;
             }
             .video_list {
-                marker: none;
+                list-style: none;
+                margin-left: -40px;
                 .video_item {
-                    marker: none;
-                    .video_cover{
+                    .video_cover {
                         width: 100%;
-                        height: 135px;
+                        height: 155px;
+                        margin-top: 10px;
                         border: 1px solid white;
-                        marker: none;
                     }
                     .video_play-button {
                         border: none;
                         position: relative;
-                        bottom: 17vh;
+                        bottom: 19vh;
                         cursor: pointer;
-                        marker: none;
-    
+
                         .play-button_image {
                             width: 100px;
-                            marker: none;
+                        }
+                    }
+
+                    .video_name {
+                        margin-top: -60px;
+                        font-family: $primary-font;
+                        font-size: 15px;
+                    }
+
+                    .video_share {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 10px;
+                        margin-bottom: 30px;
+
+                        .video_share-title {
+                            font-family: $primary-font;
+                            font-size: 12px;
+                            margin-right: 5px;
+                        }
+
+                        .video_share-facebook,
+                        .video_share-twitter {
+                            width: 20px;
+                            margin-right: 10px;
                         }
                     }
                 }
+            }
 
+            .video_button {
+                margin: 0 auto;
+                margin-top: 100px;
+                text-align: center;
+                width: 240px !important;
+                height: 50px !important;
+                line-height: 50px !important;
+                cursor: pointer;
+                background: black;
+                border: 2px solid white;
+
+                a {
+                    font-family: $primary-font;
+                    font-size: 12px;
+                    text-decoration: none;
+                    letter-spacing: 3.6px;
+                    font-weight: 100;
+                    color: white;
+                }
+            }
+        }
+
+        .mailingList-container {
+            text-align: center;
+            position: relative;
+            .mailingList_image {
+                width: 100%;
+                margin-top: 100px;
+            }
+
+            .mailingList_content-container {
+                position: absolute;
+                background-color: black;
+                width: 100%;
+                text-align: center;
+                bottom: -249px;
+                z-index: 0;
+
+                .mailingList_title {
+                    font-size: 28px;
+                    font-family: $secondary-font;
+                    padding: 15px 0;
+                }
+
+                .mailingList_description {
+                    font-family: $primary-font;
+                    font-size: 8px;
+                    line-height: 16px;
+                    margin-top: 8px;
+                    margin-bottom: 19px;
+                    letter-spacing: 2px;
+                }
+
+                .mailingList_fieldset {
+                    border: none;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+
+                    .mailingList_input {
+                        font-size: 16px;
+                        line-height: 40px;
+                        height: 50px !important;
+                        padding-right: 0;
+                        max-width: none;
+                        font-weight: 100;
+                        border: none;
+                        border-bottom: 5px solid #3b3b3b;
+                        background-color: transparent;
+                        width: 100%;
+                        letter-spacing: 6px;
+                        text-align: center;
+                        font-family: $primary-font;
+                        border-image-slice: 1;
+                        border-width: 0px 0px 2px 0px;
+                        color: #3b3b3b;
+                    }
+
+                    .mailingList_terms {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 12px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        letter-spacing: 3.6px;
+                        font-family: $primary-font;
+                        font-weight: 100;
+                    }
+
+                    .mailingList_button {
+                        margin: 0 auto;
+                        margin-top: 30px;
+                        text-align: center;
+                        width: 240px !important;
+                        height: 50px !important;
+                        line-height: 50px !important;
+                        cursor: pointer;
+                        background: black;
+                        border: 2px solid white;
+                        font-family: $primary-font;
+                        font-size: 12px;
+                        text-decoration: none;
+                        letter-spacing: 3.6px;
+                        font-weight: 100;
+                        color: white;
+                    }
+                }
             }
         }
     }

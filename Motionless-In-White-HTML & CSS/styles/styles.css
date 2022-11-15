@@ -77,6 +77,7 @@ html body {
 }
 html body .nav-container {
   font-family: "Sci Fi Bronze", "sans-serif";
+  z-index: 1;
 }
 html body .nav-container .nav_menu-container,
 html body .nav-container .nav_email-container {
@@ -198,25 +199,143 @@ html body .video-container .video_title {
   padding-bottom: 20px;
 }
 html body .video-container .video_list {
-  marker: none;
-}
-html body .video-container .video_list .video_item {
-  marker: none;
+  list-style: none;
+  margin-left: -40px;
 }
 html body .video-container .video_list .video_item .video_cover {
   width: 100%;
-  height: 135px;
+  height: 155px;
+  margin-top: 10px;
   border: 1px solid white;
-  marker: none;
 }
 html body .video-container .video_list .video_item .video_play-button {
   border: none;
   position: relative;
-  bottom: 17vh;
+  bottom: 19vh;
   cursor: pointer;
-  marker: none;
 }
 html body .video-container .video_list .video_item .video_play-button .play-button_image {
   width: 100px;
-  marker: none;
+}
+html body .video-container .video_list .video_item .video_name {
+  margin-top: -60px;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-size: 15px;
+}
+html body .video-container .video_list .video_item .video_share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+html body .video-container .video_list .video_item .video_share .video_share-title {
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-size: 12px;
+  margin-right: 5px;
+}
+html body .video-container .video_list .video_item .video_share .video_share-facebook,
+html body .video-container .video_list .video_item .video_share .video_share-twitter {
+  width: 20px;
+  margin-right: 10px;
+}
+html body .video-container .video_button {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  width: 240px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  cursor: pointer;
+  background: black;
+  border: 2px solid white;
+}
+html body .video-container .video_button a {
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  font-weight: 100;
+  color: white;
+}
+html body .mailingList-container {
+  text-align: center;
+  position: relative;
+}
+html body .mailingList-container .mailingList_image {
+  width: 100%;
+  margin-top: 100px;
+}
+html body .mailingList-container .mailingList_content-container {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  bottom: -249px;
+  z-index: 0;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_title {
+  font-size: 28px;
+  font-family: "Researcher-thin", "sans-serif";
+  padding: 15px 0;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_description {
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-size: 8px;
+  line-height: 16px;
+  margin-top: 8px;
+  margin-bottom: 19px;
+  letter-spacing: 2px;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_fieldset {
+  border: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_fieldset .mailingList_input {
+  font-size: 16px;
+  line-height: 40px;
+  height: 50px !important;
+  padding-right: 0;
+  max-width: none;
+  font-weight: 100;
+  border: none;
+  border-bottom: 5px solid #3b3b3b;
+  background-color: transparent;
+  width: 100%;
+  letter-spacing: 6px;
+  text-align: center;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  border-image-slice: 1;
+  border-width: 0px 0px 2px 0px;
+  color: #3b3b3b;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_fieldset .mailingList_terms {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-weight: 100;
+}
+html body .mailingList-container .mailingList_content-container .mailingList_fieldset .mailingList_button {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  width: 240px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  cursor: pointer;
+  background: black;
+  border: 2px solid white;
+  font-family: "Sci Fi Bronze", "sans-serif";
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  font-weight: 100;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
